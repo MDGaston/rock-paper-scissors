@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+}
+.botones {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.scoreBoard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.scoreBoard .score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.botones button {
+  position: relative;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 0; /* Opcional: ajusta el espaciado según sea necesario */
+}
+.botones button {
+  background-size: contain; /* Ajusta el tamaño de la imagen */
+  width: 200px; /* Ancho del botón */
+  height: 200px; /* Alto del botón */
+  border-radius: 25px;
+}
+
+.botones .rock button {
+  background-image: url("images/rock.png");
+}
+.botones .paper button {
+  background-image: url("images/paper.png");
+}
+.botones .scissors button {
+  background-image: url("images/scissors.png");
+}
+
+/* Estilos para el popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
